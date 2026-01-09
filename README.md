@@ -1,27 +1,49 @@
 # Full Adder – Verilog HDL
 
-## Description
-This project implements a 1-bit Full Adder using Verilog HDL.  
-The design computes the sum and carry-out for three 1-bit inputs: A, B, and Cin.
+## Overview
+This project implements a **1-bit Full Adder** using **Verilog HDL**.  
+The design is verified through **RTL simulation**, **logic synthesis**, **gate-level netlist generation**, and **post-synthesis verification**.
 
-## Functionality
-- Sum = A ⊕ B ⊕ Cin
-- Carry = (A & B) | (Cin & (A ⊕ B))
+## Files and Structure
+- **Design code/**  
+  Verilog RTL implementation of the Full Adder
 
-## Files Included
-- `full_adder.v` – RTL design of the full adder
-- `full_adder_tb.v` – Testbench for functional verification
-- `wave_full.vcd` – Simulation waveform file
-- Screenshots of GTKWave and Yosys synthesis (if included)
+- **Testbench/**  
+  Testbench used for functional verification
+
+- **full_adder_simulation.png**  
+  RTL simulation waveform (GTKWave)
+
+- **full_adder_wave.png**  
+  Output waveform showing sum and carry
+
+- **full_adder_syn1.png, full_adder_syn2.png**  
+  Synthesized RTL schematic
+
+- **full_adder_netlist1.png, full_adder_netlist2.png**  
+  Gate-level netlist representation
+
+- **full_adder_postverification.png**  
+  Post-synthesis verification result
+
+- **full_adder_postver_wave.png**  
+  Post-synthesis waveform
+
+- **full_adder_diagram.png**  
+  Functional block diagram of Full Adder
 
 ## Tools Used
 - Icarus Verilog (iverilog)
 - GTKWave
-- Yosys (for synthesis and gate-level visualization)
+- Yosys (for synthesis and netlist generation)
 
-## Verification
-The design was verified through simulation using all possible input combinations.
-Post-synthesis verification was also performed to ensure functional correctness.
+## Functionality
+The Full Adder performs binary addition of three 1-bit inputs:
+- Inputs: `a`, `b`, `cin`
+- Outputs: `sum`, `cout`
 
-## Author
-Jotshna Tulasi
+## Status
+✔ RTL design completed  
+✔ Simulation verified  
+✔ Synthesis completed  
+✔ Post-synthesis verification completed
